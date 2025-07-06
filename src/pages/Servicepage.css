@@ -1,0 +1,112 @@
+.services-page {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem 1rem;
+  overflow-x: hidden;
+}
+
+/* Header Banner */
+.services-header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 20px rgba(255, 46, 46, 0.2);
+}
+
+.services-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff2e2e, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-header p {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Circular Service Cards Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem 0;
+}
+
+.service-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 2px solid #ff2e2e;
+  box-shadow: 0 0 15px rgba(255, 46, 46, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.service-circle:hover {
+  transform: scale(1.1) rotate(3deg);
+  background-color: #1a1a1a;
+  box-shadow: 0 0 25px rgba(255, 46, 46, 0.5);
+}
+
+.service-circle svg {
+  margin-bottom: 0.6rem;
+  color: #ff2e2e;
+  font-size: 1.8rem;
+}
+
+/* Feature Section */
+.service-feature {
+  margin: 4rem auto;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #0a0a0a, #1c1c1c);
+  border-radius: 14px;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(255, 46, 46, 0.15);
+  text-align: center;
+}
+
+.service-feature h2 {
+  color: #ff2e2e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-feature p {
+  color: #ddd;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Call to Action Button */
+.cta-button {
+  background-color: #ff2e2e;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 46, 46, 0.3);
+}
+
+.cta-button:hover {
+  background-color: #e6001f;
+  box-shadow: 0 0 14px rgba(255, 46, 46, 0.4);
+}
