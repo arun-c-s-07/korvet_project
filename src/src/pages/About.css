@@ -1,0 +1,164 @@
+.about-page {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem 1rem;
+  transition: background 0.6s ease;
+}
+
+/* Hero Section */
+.hero-banner {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-banner h1 span {
+  color: #ff2e2e;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+/* Timeline Section */
+.about-timeline {
+  margin: 3rem auto;
+  max-width: 900px;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid #ff2e2e;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ff2e2e;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #ff2e2e;
+}
+
+.timeline-content p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* Services Section */
+.about-services {
+  background-color: #ffffff;
+  color: #111;
+  padding: 3rem 1rem;
+  border-radius: 16px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.about-services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #c22626;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background-color: #ffe5e5;
+}
+
+/* Quote Section */
+.about-signature {
+  text-align: center;
+  margin: 4rem 0;
+  padding: 2rem;
+  font-style: italic;
+  background: #1a1a1a;
+  border-left: 4px solid #ff2e2e;
+  border-radius: 6px;
+}
+
+.about-signature blockquote {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+.signature {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #ff2e2e;
+}
+
+/* Culture / CTA Section */
+.about-extra {
+  text-align: center;
+  background: linear-gradient(135deg, #0a0a0a, #111);
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.about-extra h2 {
+  color: #ff2e2e;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-extra p {
+  color: #ddd;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  background-color: #ff2e2e;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6001f;
+}
+
+
