@@ -19,7 +19,6 @@
     z-index: 10;
 }
 
-/* Optional subtitle */
 .services-heading p {
     font-size: 1.1rem;
     color: #ad9393;
@@ -40,7 +39,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    opacity: 1; /* Removed fade-in animation */
     width: 200px;
     height: 200px;
     background-color: #1c1c1c;
@@ -54,7 +53,7 @@
     justify-content: center;
     text-align: center;
     padding: 1.8rem;
-    transition: transform 0.8s ease, top 0.8s ease, left 0.8s ease, opacity 0.8s ease;
+    transition: none; /* No animation */
 }
 
 .service-card span svg {
@@ -62,44 +61,37 @@
     margin-bottom: 6px;
 }
 
-/* Final flyout positions */
-.service-card.animate.top-left {
+/* Final static positions */
+.service-card.top-left {
     top: 15.5%;
     left: 37%;
-    opacity: 1;
 }
 
-.service-card.animate.top-right {
+.service-card.top-right {
     top: 15.5%;
     left: 64%;
-    opacity: 1;
 }
 
-.service-card.animate.bottom-left {
+.service-card.bottom-left {
     top: 45%;
     left: 24%;
-    opacity: 1;
 }
 
-.service-card.animate.bottom-right {
+.service-card.bottom-right {
     top: 45%;
     left: 76%;
-    opacity: 1;
 }
 
-.service-card.animate.extra-left {
+.service-card.extra-left {
     top: 72.56%;
     left: 37%;
-    opacity: 1;
 }
 
-.service-card.animate.extra-right {
+.service-card.extra-right {
     top: 72.56%;
     left: 65%;
-    opacity: 1;
 }
 
-/* Hover effect */
 .service-card:hover {
     transform: translate(-50%, -50%) scale(1.05);
     background-color: #222;
@@ -108,7 +100,7 @@
     cursor: pointer;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     .service-card {
         width: 180px;
@@ -117,13 +109,13 @@
         font-size: 0.9rem;
     }
 
-    .service-card.animate.top-left,
-    .service-card.animate.bottom-left {
+    .service-card.top-left,
+    .service-card.bottom-left {
         left: 30%;
     }
 
-    .service-card.animate.top-right,
-    .service-card.animate.bottom-right {
+    .service-card.top-right,
+    .service-card.bottom-right {
         left: 70%;
     }
 }
@@ -139,7 +131,6 @@
     transform: translate(-50%, -50%);
     z-index: 5;
 }
-
 
 .service-card span {
     display: flex;
